@@ -14,7 +14,7 @@ const getWeather = async (url) => {
         console.log(data);
         return (data);
     } catch (error) {
-        console.log("error", error);
+        console.log('error', error);
     }
 }
 
@@ -32,7 +32,7 @@ const postData = async (url = '', data = {}) => {
         const newData = await response.json();
         return newData;
     } catch (error) {
-        console.log("error", error);
+        console.log('error', error);
     }
 }
 
@@ -46,7 +46,7 @@ const updateUI = async () => {
         console.log(allData.temperature);
         document.getElementById('content').innerHTML = allData.feelings;
     } catch (error) {
-        console.log("error", error);
+        console.log('error', error);
     }
 }
 

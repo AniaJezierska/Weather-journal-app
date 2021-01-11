@@ -19,11 +19,13 @@ npm install body-parser
 ```
 
 Step 2:
+
 Run in the project directory
 ```
 node server.js
 ```
 
 Step 3:
+
 Go to the browser and open
 [http://localhost:8000](http://localhost:8000) 

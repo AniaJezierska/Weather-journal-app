@@ -22,6 +22,7 @@ Step 2:
 Run in the project directory
 ```
 node server.js
+```
 
 Step 3:
 Go to the browser and open

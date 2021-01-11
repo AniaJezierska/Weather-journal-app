@@ -1,6 +1,6 @@
 # Weather-Journal App Project
 
-This project requires creating an asynchronous web application that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
+This project requires creating an asynchronous web application that uses the web API and user data to dynamically update the Weather-Journal UI.
 
 ## Dependency installation
 ```

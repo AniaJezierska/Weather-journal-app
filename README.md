@@ -27,3 +27,5 @@ node server.js
 
 Go to the browser and open
 [http://localhost:8000](http://localhost:8000) 
+
+Submitting the form will send a request to the OpenWeatherMap API and return the weather information for that location.

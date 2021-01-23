@@ -34,20 +34,20 @@ function listening() {
 // Get Route
 app.get('/all', getProjectData);
 
-function getProjectData(request, response) {
-    response.send(projectData);
+function getProjectData(req, res) {
+    res.send(projectData);
     console.log(projectData);
 };
 
 // Post Route
 app.post('/add', postProjectData);
 
-function postProjectData(request, response) {
+function postProjectData(req, res) {
     newEntry = {
         temperature: request.body.temperature,
         date: request.body.date,
         feelings: request.body.feelings,
     }
-    response.send(newEntry);
+    res.send(newEntry);
     console.log(newEntry);
 };

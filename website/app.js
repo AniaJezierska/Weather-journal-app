@@ -7,7 +7,7 @@ let d = new Date();
 let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
 
 // Get Request
-const getWeather = async (url) => {
+const getWeatherForecast = async (url) => {
     const response = await fetch(url)
     try {
         const data = await response.json();
@@ -56,7 +56,7 @@ document.getElementById('generate').addEventListener('click', getWeather);
 function getWeather(e) {
     const zip = document.getElementById('zip').value;
     const feelings = document.getElementById('feelings').value;
-    getWeather(`${baseUrl}${zip}${apiKey}`)
+    getWeatherForecast(`${baseUrl}${zip}${apiKey}`)
         .then(function (data) {
             postData('/add', {
                 temperature: data.main.temp,

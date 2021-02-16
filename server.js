@@ -6,6 +6,7 @@ const express = require('express');
 
 // Start up an instance of app
 const app = express();
+
 const bodyParser = require('body-parser');
 
 /* Middleware*/
@@ -44,10 +45,10 @@ app.post('/add', postProjectData);
 
 function postProjectData(req, res) {
     newEntry = {
-        temperature: request.body.temperature,
-        date: request.body.date,
-        feelings: request.body.feelings,
+        temperature: req.body.temperature,
+        date: req.body.date,
+        feelings: req.body.feelings,
     }
-    res.send(newEntry);
-    console.log(newEntry);
+    projectData = newEntry;
+    res.send(projectData);
 };

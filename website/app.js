@@ -1,5 +1,5 @@
 /* Global Variables */
-const baseURL =
+const baseUrl =
   "http://api.openweathermap.org/data/2.5/weather?zip=";
 const apiKey = "&appid=1a42b91794f1fa1d0ca7ed9f00590103&units=metric";
 
